@@ -1,0 +1,239 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.events {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #967bb6;
+}
+
+.events .event {
+  width: 300px;
+  border: 1px solid #ebf1f6;
+  box-shadow: 0 0 2px 0 rgba(145, 158, 171, .2), 0 12px 24px -4px rgba(145, 158, 171, .12);
+}
+
+.event-title {
+  color: #967bb6
+}
+
+.event img {
+  height: 150px;
+  width: 100%;
+}
+
+#ticketType {
+  width: 100%;
+}
+
+.actions {
+  flex-wrap: wrap;
+}
+
+.quantity {
+  margin: 12px auto;
+}
+
+#page-header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.link-item {
+  color: #967bb6;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 20px;
+}
+
+.logo {
+  height: 70px;
+  padding: 6px;
+}
+
+.add-btn {
+  background-color: #967bb6
+}
+
+.add-to-cart-btn {
+  background: #967bb6;
+  margin: 22px auto;
+  display: block;
+  width: 100%;
+}
+
+.main-content-component {
+  margin-bottom: 40px;
+}
+
+.image_dash {
+  width: 100%;
+}
+
+:root {
+
+  --rad: .7rem;
+  --dur: .3s;
+  --color-dark: #2f2f2f;
+  --color-light: #fff;
+  --color-brand: #8c1f9f;
+  --font-fam: 'Lato', sans-serif;
+  --height: 5rem;
+  --btn-width: 6rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+}
+
+form {
+
+  position: relative;
+  width: 60rem;
+  background: var(--color-brand);
+  border-radius: var(--rad);
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+input,
+button {
+
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: var(--color-dark);
+  font-size: 1.8rem;
+}
+
+input[type="search"] {
+
+  outline: 0;
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  appearance: none;
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+
+.searchButton {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: var(--color-brand);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+
+input:not(:placeholder-shown) {
+
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+  +button {
+    display: block;
+  }
+}
+
+label {
+
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.eventButton{
+  color: #000000;
+  width: 150px;
+  height: 30px;
+  background-color:#967bb6;
+  font-size: 20px;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 600;
+  background-color: lightcyan;
+  border-radius: 20px;
+}
+
+.event-details {
+  margin-bottom: 10px;
+}
+
+.event-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.event-button {
+  appearance: none;
+  background-color: transparent;
+  /* border: 2px solid #1A1A1A; */
+  border: 2px solid cadetblue;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  /* background-color: lightseagreen; */
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  height: 35px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.event-button:disabled {
+  pointer-events: none;
+}
+
+.event-button:hover {
+  color: #fff;
+  /* background-color: #1A1A1A; */
+  background-color: cadetblue;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.event-button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
